@@ -545,6 +545,12 @@
       		itemArray.push(JSONFredData.observations[i].date);
       		itemArray.push((JSONFredData.observations[i].value));
       		arraysData.push(itemArray);
+      		
+		var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Topping');
+			data.addColumn('number', 'Slices');
+			data.addRows(arraysData);
+
 
         // Create the data table.
         var data = new google.visualization.DataTable();
