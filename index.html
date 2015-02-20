@@ -543,7 +543,7 @@
       		
 		var vegetableArray = [];
       		vegetableArray.push(JSONFredData.observations[i].date);
-      		vegetableArray.push((JSONFredData.observations[i].value));
+      		vegetableArray.push(Number(JSONFredData.observations[i].value));
       		arraysData.push(itemArray);
       		
 		var data = new google.visualization.DataTable();
